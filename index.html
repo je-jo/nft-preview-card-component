@@ -9,41 +9,52 @@
   <link rel="icon" type="image/png" sizes="32x32" href="src/assets/img/favicon-32x32.png">
   <link rel="stylesheet" href="/dist/output.css">
   <title>Frontend Mentor | NFT preview card component</title>
+  <style>
+    * {
+      outline: 1px solid red;
+    }
+  </style>
 </head>
 
-<body class="bg-yellow-200">
-  <a href="">
-    <img src="src/assets/img/image-equilibrium.jpg"
-      alt="an NFT showing a glass cube standing on its' tip and reflecting colorful light" width="604" height="604" style="width: 300px; height: 300px">
-      <!-- 280, 300 -->
-  </a>
-  <h1><a href="#">Equilibrium #3429</a></h1>
-  <p>Our Equilibrium collection promotes balance and calm.</p>
-  <p>
-    <span>
-      <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg">
-        <path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
-          fill="#00FFF8" />
-      </svg>
-    </span>
-    <span>0.041 ETH</span>
-  </p>
-  <p>
-    <span>
-      <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z"
-          fill="#8BACD9" />
-      </svg>
-    </span>
-    <span>3 days left</span>
-  </p>
-  <p>
-    <img src="src/assets/img/image-avatar.png" alt="avatar of jules wyvern" width="132" height="132" style="width: 34px; height: 34px">
-    <!-- 34 -->
-    <span>Creation of <a href="">Jules Wyvern</a></span>
-  </p>
-  <footer>
+<body class="min-h-screen grid grid-rows-[1fr_auto] justify-items-center">
+  <main class="grid items-center p-6">
+    <div class="p-6 grid items-center gap-4 max-w-[22rem]">
+      <a href="">
+        <img src="src/assets/img/image-equilibrium.jpg"
+          alt="an NFT showing a glass cube standing on its' tip and reflecting colorful light" width="300" height="300" class="mx-auto">
+          <!-- 280, 300 -->
+      </a>
+      <h1 class="font-bold text-2xl"><a href="#">Equilibrium #3429</a></h1>
+      <p>Our Equilibrium collection promotes balance and calm.</p>
+      <div class="flex justify-between">
+        <p class="flex items-center gap-1">
+          <span>
+            <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
+                fill="#00FFF8" />
+            </svg>
+          </span>
+          <span>0.041 ETH</span>
+        </p>
+        <p class="flex items-center gap-1">
+          <span>
+            <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z"
+                fill="#8BACD9" />
+            </svg>
+          </span>
+          <span>3 days left</span>
+        </p>
+      </div>
+
+      <p class="mt-4 flex items-center gap-3">
+        <img src="src/assets/img/image-avatar.png" alt="avatar of jules wyvern" width="34" height="34">
+        <span>Creation of <a href="">Jules Wyvern</a></span>
+      </p>
+    </div>
+  </main>
+  <footer class="">
     <p>
       <small>Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
