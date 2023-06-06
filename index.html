@@ -7,16 +7,11 @@
   <meta name="description" content="A solution to a Frontend Mentor challenge - NFT Preview Card Component">
   <meta name="theme-color" content="hsl(216, 55%, 11%)">
   <link rel="icon" type="image/png" sizes="32x32" href="src/assets/img/favicon-32x32.png">
-  <link rel="stylesheet" href="/dist/output.css">
+  <link rel="stylesheet" href="dist/output.css">
   <title>Frontend Mentor | NFT preview card component</title>
-  <style>
-    * {
-      outline: 1px solid red;
-    }
-  </style>
 </head>
 
-<body class="min-h-screen grid grid-rows-[1fr_auto] justify-items-center">
+<body class="min-h-screen grid grid-rows-[1fr_auto] justify-items-center font-body">
   <main class="grid items-center p-6">
     <div class="p-6 grid items-center gap-4 max-w-[22rem]">
       <a href="src/assets/img/image-equilibrium.jpg" class="relative inline-block 
@@ -27,10 +22,9 @@
         <img src="src/assets/img/image-equilibrium.jpg"
           alt="an NFT showing a glass cube standing on its' tip and reflecting colorful light" width="300" height="300"
           class="mx-auto">
-        <!-- 280, 300 -->
       </a>
-      <h1 class="font-bold text-2xl"><a href="#">Equilibrium #3429</a></h1>
-      <p>Our Equilibrium collection promotes balance and calm.</p>
+      <h1 class="text-[1.4rem] font-semibold"><a href="#">Equilibrium #3429</a></h1>
+      <p class="-mt-1.5 md:text-lg font-light">Our Equilibrium collection promotes balance and calm.</p>
       <div class="flex justify-between">
         <p class="flex items-center gap-1">
           <span>
@@ -39,7 +33,7 @@
                 fill="#00FFF8" />
             </svg>
           </span>
-          <span>0.041 ETH</span>
+          <span class="font-semibold">0.041 ETH</span>
         </p>
         <p class="flex items-center gap-1">
           <span>
@@ -53,9 +47,9 @@
         </p>
       </div>
 
-      <p class="mt-4 flex items-center gap-3">
-        <img src="src/assets/img/image-avatar.png" alt="avatar of jules wyvern" width="34" height="34">
-        <span>Creation of <a href="">Jules Wyvern</a></span>
+      <p class="mt-4 flex items-center gap-4">
+        <img src="src/assets/img/image-avatar.png" alt="avatar of jules wyvern" width="32" height="32">
+        <span class="tracking-tight">Creation of <a href="#" class="mx-1 md:mx-2">Jules Wyvern</a></span>
       </p>
     </div>
   </main>
@@ -64,7 +58,8 @@
       <small>Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
         <a href="https://github.com/je-jo" target="_blank">Jelena Jovičić</a>,
-        2023.</small>
+        2023.
+      </small>
     </p>
   </footer>
 </body>

@@ -1,6 +1,58 @@
-/*
-! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
-*/
+/* outfit-300 - latin_latin-ext */
+
+@font-face {
+  font-display: swap;
+
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+
+  font-family: 'Outfit';
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  src: url('../src/assets/fonts/outfit-v11-latin_latin-ext-300.woff2') format('woff2');
+
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* outfit-regular - latin_latin-ext */
+
+@font-face {
+  font-display: swap;
+
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+
+  font-family: 'Outfit';
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  src: url('../src/assets/fonts/outfit-v11-latin_latin-ext-regular.woff2') format('woff2');
+
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* outfit-600 - latin_latin-ext */
+
+@font-face {
+  font-display: swap;
+
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+
+  font-family: 'Outfit';
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  src: url('../src/assets/fonts/outfit-v11-latin_latin-ext-600.woff2') format('woff2');
+
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* ! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -526,9 +578,22 @@ video {
   position: relative;
 }
 
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.-mt-1 {
+  margin-top: -0.25rem;
+}
+
+.-mt-1\.5 {
+  margin-top: -0.375rem;
 }
 
 .mt-4 {
@@ -575,10 +640,6 @@ video {
   gap: 0.25rem;
 }
 
-.gap-3 {
-  gap: 0.75rem;
-}
-
 .gap-4 {
   gap: 1rem;
 }
@@ -587,17 +648,24 @@ video {
   padding: 1.5rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.font-body {
+  font-family: Outfit;
 }
 
-.font-bold {
-  font-weight: 700;
+.text-\[1\.4rem\] {
+  font-size: 1.4rem;
 }
 
-.outline {
-  outline-style: solid;
+.font-light {
+  font-weight: 300;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.tracking-tight {
+  letter-spacing: -0.025em;
 }
 
 .after\:absolute::after {
@@ -605,19 +673,14 @@ video {
   position: absolute;
 }
 
-.after\:left-0::after {
-  content: var(--tw-content);
-  left: 0px;
-}
-
-.after\:top-0::after {
-  content: var(--tw-content);
-  top: 0px;
-}
-
 .after\:bottom-0::after {
   content: var(--tw-content);
   bottom: 0px;
+}
+
+.after\:left-0::after {
+  content: var(--tw-content);
+  left: 0px;
 }
 
 .after\:right-0::after {
@@ -625,41 +688,14 @@ video {
   right: 0px;
 }
 
+.after\:top-0::after {
+  content: var(--tw-content);
+  top: 0px;
+}
+
 .after\:hidden::after {
   content: var(--tw-content);
   display: none;
-}
-
-.after\:h-full::after {
-  content: var(--tw-content);
-  height: 100%;
-}
-
-.after\:h-11::after {
-  content: var(--tw-content);
-  height: 2.75rem;
-}
-
-.after\:w-full::after {
-  content: var(--tw-content);
-  width: 100%;
-}
-
-.after\:w-11::after {
-  content: var(--tw-content);
-  width: 2.75rem;
-}
-
-.after\:bg-red-600::after {
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
-}
-
-.after\:bg-green-800::after {
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(22 101 52 / var(--tw-bg-opacity));
 }
 
 .after\:bg-blue-500::after {
@@ -668,39 +704,19 @@ video {
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
-.after\:bg-opacity-30::after {
-  content: var(--tw-content);
-  --tw-bg-opacity: 0.3;
-}
-
-.after\:bg-opacity-90::after {
-  content: var(--tw-content);
-  --tw-bg-opacity: 0.9;
-}
-
 .after\:bg-opacity-80::after {
   content: var(--tw-content);
   --tw-bg-opacity: 0.8;
 }
 
-.after\:bg-\[url\(\'assets\/img\/icon-view\.svg\'\)\]::after {
+.after\:bg-\[url\(\'\.\.\/src\/assets\/img\/icon-view\.svg\'\)\]::after {
   content: var(--tw-content);
-  background-image: url('assets/img/icon-view.svg');
+  background-image: url('../src/assets/img/icon-view.svg');
 }
 
-.after\:bg-\[url\(\'src\/assets\/img\/icon-view\.svg\'\)\]::after {
+.after\:bg-center::after {
   content: var(--tw-content);
-  background-image: url('src/assets/img/icon-view.svg');
-}
-
-.after\:bg-\[url\(\'src\/assets\/img\/favicon-32x32\.png\'\)\]::after {
-  content: var(--tw-content);
-  background-image: url('src/assets/img/favicon-32x32.png');
-}
-
-.after\:bg-contain::after {
-  content: var(--tw-content);
-  background-size: contain;
+  background-position: center;
 }
 
 .after\:bg-no-repeat::after {
@@ -708,53 +724,19 @@ video {
   background-repeat: no-repeat;
 }
 
-.after\:text-white::after {
-  content: var(--tw-content);
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.after\:content-\[url\(\'src\/assets\/img\/icon-view\.svg\'\)\]::after {
-  --tw-content: url('src/assets/img/icon-view.svg');
-  content: var(--tw-content);
-}
-
-.after\:content-\[url\(\'src\/assets\/img\/favicon-32x32\.png\'\)\]::after {
-  --tw-content: url('src/assets/img/favicon-32x32.png');
-  content: var(--tw-content);
-}
-
-.after\:content-\[\'AAA\'\]::after {
-  --tw-content: 'AAA';
-  content: var(--tw-content);
-}
-
-.after\:content-\[\'url\(\'src\/assets\/img\/icon-view\.svg\'\)\'\]::after {
-  --tw-content: 'url('src/assets/img/icon-view.svg')';
-  content: var(--tw-content);
-}
-
-.after\:content-\[\'url\(\\\'src\/assets\/img\/icon-view\.svg\\\'\)\'\]::after {
-  --tw-content: 'url(\'src/assets/img/icon-view.svg\')';
-  content: var(--tw-content);
-}
-
-.after\:content-\[url\(\\\'src\/assets\/img\/icon-view\.svg\\\'\)\]::after {
-  --tw-content: url(\'src/assets/img/icon-view.svg\');
-  content: var(--tw-content);
-}
-
-.after\:content-\[url\(src\/assets\/img\/icon-view\.svg\)\]::after {
-  --tw-content: url(src/assets/img/icon-view.svg);
-  content: var(--tw-content);
-}
-
 .after\:hover\:block:hover::after {
   content: var(--tw-content);
   display: block;
 }
 
-.after\:hover\:flex:hover::after {
-  content: var(--tw-content);
-  display: flex;
+@media (min-width: 768px) {
+  .md\:mx-2 {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
