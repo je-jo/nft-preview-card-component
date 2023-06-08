@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution](...)
+- [Solution](https://www.frontendmentor.io/solutions/nft-preview-card-component-with-tailwind-css-jtl30qowvG)
 - [Live](https://je-jo.github.io/nft-preview-card-component/)
 
 ## My process
